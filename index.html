@@ -30,18 +30,30 @@
 
       #wow {
         font-size:20px ;
-        margin: 20px;
+        padding: 20px;
         background-color: honeydew;
         margin-top: 10px;
         color: rgb(86, 85, 85);
         
+        
       }
 
       #loading {
+
+        font-size: 20px;
         background-color: honeydew;
-        margin-top: 45px;
-        margin-left: 10px;
-        margin-right: 10px;
+        padding: 30px;
+        
+        
+        /* margin-left: 10px; */
+        width: 100%;
+        height: 30vh;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
       }
 
       #nextJoke {
@@ -63,7 +75,7 @@
            justify-content: center;
            text-align: center;
            align-items: center;
-           margin-top:150px ;
+           margin-top:10px ;
   
       }
       .last{
@@ -75,12 +87,28 @@
   .box {
     width: 70vw;
     height: 60vh;
+    background-color: honeydew;
       margin-left: 15%;
         margin-top: 5%; 
          margin-right: 15%; 
   }
+  #loading{
+    background-color: honeydew;
+    
+    font-size:20px ;
+        margin: 10px;
+        padding : 10px;
 
 
+
+  }
+  #fasadKijar{
+    background-color: honeydew;
+
+
+  }
+
+      }
 
 
 
@@ -90,7 +118,7 @@
   <body>
     <div class="box">
       <p id="wow">Jokes by Talal to make your day 😈</p>
-      <h3 id="loading">Joke is loading....</h3>
+       <div id="fasadKijar"><p id="loading">Joke is loading....</p> </div> 
       <div  style="background-color: honeydew" class="last">
         <button
           id="nextJoke"
