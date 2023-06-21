@@ -15,15 +15,14 @@
 
       .box {
         background-color: honeydew;
-        width: 70vw;
-        height: 60vh;
+        width: 100%;
+        height: 100vh;
         display: flex;
         align-items: center;
-        margin-left: 15%;
-        margin-top: 10%;
-        /* margin-right: 15%; Adjusted margin-right value */
+      
         flex-direction: column;
         
+      
       }
 
       #wow {
@@ -31,7 +30,7 @@
         background-color: honeydew;
         margin-top: 10px;
         color: rgb(86, 85, 85);
-        font-size: 2rem;
+        
       }
 
       #loading {
@@ -50,24 +49,41 @@
         padding: 8px;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
         margin: 40px;
+        margin-left: 70px;
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
           /* margin-top:80px ;
            margin-right: 180px; */
-          
-
-        
-        
+           align-self: start;
   
       }
+      .last{
+
+width: 80vw;
+
+      }
+      @media only screen and (min-width: 768px) {
+  .box {
+    width: 70vw;
+    height: 60vh;
+      margin-left: 15%;
+        margin-top: 5%; 
+         margin-right: 15%; 
+  }
+
+
+
+
+
+
     </style>
   </head>
   <body>
     <div class="box">
-      <h3 id="wow">Jokes by Talal to make your day 😈</h3>
+      <p id="wow">Jokes by Talal to make your day 😈</p>
       <h3 id="loading">Joke is loading....</h3>
-      <div span style="background-color: honeydew">
+      <div  style="background-color: honeydew" class="last">
         <button
           id="nextJoke"
           onmousedown="style.color = 'blue' "
